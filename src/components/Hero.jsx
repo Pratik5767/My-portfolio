@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import pictureImg from '../assets/Portfolio/my-photo.jpg';
+import ResumeDownload from './ResumeDownload';
 
 
 
@@ -221,7 +222,7 @@ const Hero = () => {
                         </p>
 
                         {/* Action Button Set */}
-                        <div className="hero-anim-item flex items-center gap-4 pt-2">
+                        <div className="hero-anim-item flex flex-wrap items-center gap-3 pt-2">
                             <a
                                 href="#projects"
                                 className="px-8 py-3.5 bg-white text-black font-bold text-xs uppercase tracking-widest rounded hover:bg-sky-600 hover:text-white transition-all duration-300 shadow-[0_10px_35px_rgba(255,255,255,0.3)] flex items-center gap-2 hover:scale-105 active:scale-95"
@@ -231,6 +232,7 @@ const Hero = () => {
                                 </svg>
                                 View Projects
                             </a>
+                            
                             <a
                                 href="#contact"
                                 className="px-8 py-3.5 bg-neutral-900/80 text-white border border-white/20 font-bold text-xs uppercase tracking-widest rounded hover:bg-neutral-800 transition-all duration-300 shadow-xl backdrop-blur-md flex items-center gap-2 hover:scale-105 active:scale-95"
@@ -320,12 +322,15 @@ const Hero = () => {
                     <a href="#projects" className="hover:text-cyan-400 transition-colors">Projects</a>
                     <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
                 </nav>
-                <a
-                    href="#contact"
-                    className="px-5 py-2 rounded bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.6)] hover:scale-105 active:scale-95"
-                >
-                    Hire Me
-                </a>
+                <div className="flex items-center gap-2">
+                    <ResumeDownload className="px-3 py-2 text-[10px]" />
+                    <a
+                        href="#contact"
+                        className="px-5 py-2 rounded bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.6)] hover:scale-105 active:scale-95"
+                    >
+                        Hire Me
+                    </a>
+                </div>
             </header>
         </section>
     );
