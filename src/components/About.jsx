@@ -171,7 +171,7 @@ const About = () => {
                                             <p className="mt-1 text-sm font-medium text-cyan-300">AB Infotech Solutions Pvt. Ltd.</p>
                                         </div>
                                         <span className="w-fit rounded-full border border-sky-400/20 bg-sky-400/10 px-3 py-1 text-[10px] font-mono uppercase tracking-wider text-cyan-200">
-                                            Jul 2026 - Present
+                                            Oct 2026 - Present
                                         </span>
                                     </div>
                                     <p className="mb-3 text-xs font-mono uppercase tracking-wider text-white/40">Pune, Maharashtra</p>
